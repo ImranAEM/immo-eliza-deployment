@@ -4,9 +4,6 @@ import pandas as pd
 import numpy as np
 
 
-# para ejecutar: streamlit run streamlit/app.py
-# activar el virtual environment: .\deployment_env\Scripts\Activate.ps1
-
 
 
 pipeline = joblib.load("api/property_price_prediction_pipeline.joblib")
@@ -27,8 +24,6 @@ st.sidebar.image("https://cdn.pixabay.com/photo/2023/12/19/22/46/house-8458547_1
 st.sidebar.text("This application allows you to estimate the price of a property "
 "in Belgium using a machine learning model trained on real data. " \
 "Enter the property features and receive an instant prediction.")
-
-
 
 
 
