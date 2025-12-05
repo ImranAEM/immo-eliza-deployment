@@ -58,7 +58,7 @@ The project integrates model loading, preprocessing pipelines, backend API deplo
 
 The deployed web application can be accessed here:
 
-👉 https://immo-eliza-genius.streamlit.app/
+#### 👉 https://immo-eliza-genius.streamlit.app/
 ---------------------------------------------------------------------------------------------
 
 3. Preprocessing Pipeline Integration
@@ -105,7 +105,7 @@ The project was completed over multiple sessions, covering:
 
 ---------------------------------------------------------------------------------------------
 
-🏛️ Personal Situation
+## 🏛️ Personal Situation
 
 This project is part of the Immo Eliza Deployment assignment from the BeCode AI Bootcamp.
 It extends the ML model created in the previous project and turns it into a functional application accessible to any user through an online platform.
