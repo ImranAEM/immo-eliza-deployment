@@ -7,9 +7,9 @@ This project is part of the BeCode BootCamp and focuses on deploying the Machine
 
 The goal is to transform the trained model into a fully functional product available through:
 
-A FastAPI REST API that receives property information and returns a price prediction.
+* A FastAPI REST API that receives property information and returns a price prediction.
 
-A Streamlit Web Application where users can input property data through a friendly interface.
+* A Streamlit Web Application where users can input property data through a friendly interface.
 
 The project integrates model loading, preprocessing pipelines, backend API deployment, and frontend application development.
 
