@@ -4,6 +4,9 @@ import joblib
 import pandas as pd
 import numpy as np
 
+from fastapi import FastAPI, HTTPException
+
+
 
 # Load trained Pipeline
 
@@ -45,10 +48,10 @@ def home():
 @app.post('/predict/')
 def predict_price(data: HouseData):
 
-    # Convertir el objeto recibido en diccionario
+    # Convert the received object into a dictionary
     dictionary = data.model_dump()
 
-    # Crear DataFrame a partir del diccionario
+    # Create DataFrame from dictionary
     df_house = pd.DataFrame([dictionary])
 
 
@@ -60,7 +63,7 @@ def predict_price(data: HouseData):
 
     
 
-    # Renombrar columnas para que coincidan con el pipeline
+    # Rename columns to match the pipeline
     df_house.rename(columns={
         "locality_name": "Locality name",
         "postal_code": "Postal code",
@@ -81,11 +84,13 @@ def predict_price(data: HouseData):
 
 
 
-    # Añadir columnas que el pipeline espera y no vienen del usuario
-    df_house["Terrace Surface"] = 0  # o el valor que corresponda
-
+    # Add columns that the pipeline expects but do not come from the user
+    df_house["Terrace Surface"] = 0  
     
-    prediction = pipeline.predict(df_house)
 
-
-    return {"predicted price": f"€{prediction[0]:,.2f}"}
+    try:
+        prediction = pipeline.predict(df_house)
+        return {"predicted price": f"€{prediction[0]:,.2f}"}
+    
+    except Exception as e:
+        raise HTTPException(status_code=400, detail=f"Prediction error: {str(e)}")

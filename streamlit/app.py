@@ -64,7 +64,7 @@ swimming_pool = st.checkbox("Swimming pool")
 
 
 if type_property == "Appartment":
-    subtype_property = "Appartment"  # ajusta al nombre real de tu dataset
+    subtype_property = "Appartment"  # adjust to the actual name of your dataset
 else:
     subtype_property = "House"
 
