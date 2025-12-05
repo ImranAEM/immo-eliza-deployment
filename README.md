@@ -12,6 +12,7 @@ A FastAPI REST API that receives property information and returns a price predic
 A Streamlit Web Application where users can input property data through a friendly interface.
 
 The project integrates model loading, preprocessing pipelines, backend API deployment, and frontend application development.
+
 ---------------------------------------------------------------------------------------------
 
 🗂 Folder Structure
@@ -57,7 +58,7 @@ The project integrates model loading, preprocessing pipelines, backend API deplo
 
 The deployed web application can be accessed here:
 
-👉 https://immo-eliza-genius.streamlit.app/
+### 👉 https://immo-eliza-genius.streamlit.app/
 ---------------------------------------------------------------------------------------------
 
 3. Preprocessing Pipeline Integration
