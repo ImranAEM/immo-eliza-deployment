@@ -58,7 +58,7 @@ The project integrates model loading, preprocessing pipelines, backend API deplo
 
 The deployed web application can be accessed here:
 
-### 👉 https://immo-eliza-genius.streamlit.app/
+👉 https://immo-eliza-genius.streamlit.app/
 ---------------------------------------------------------------------------------------------
 
 3. Preprocessing Pipeline Integration
@@ -76,7 +76,7 @@ The deployed web application can be accessed here:
 * requirements.txt included for reproducibility.
 ---------------------------------------------------------------------------------------------
 
-🧠 Learning Approach
+## 🧠 Learning Approach
 
 This project emphasizes the real-world workflow of deploying machine learning models:
 
@@ -89,7 +89,7 @@ This project emphasizes the real-world workflow of deploying machine learning mo
 * Delivering a user-ready product.
 ---------------------------------------------------------------------------------------------
 
-⏱️ Timeline
+## ⏱️ Timeline
 
 The project was completed over multiple sessions, covering:
 
